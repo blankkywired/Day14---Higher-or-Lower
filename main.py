@@ -18,7 +18,7 @@ print(f"{draws.image_Logo}\nCompare A: {first_Choice['name']} a {first_Choice['d
 
 score = 0
 user_question = input("Who has more followers? Type 'A' or 'B': ")
-
+#Preciso criar uma função aqui para checar as respostas do usuario
 if user_question == "A":
     if first_Choice['follower_count'] > second_Choice['follower_count']:
         score += 1
