@@ -1,41 +1,18 @@
 import random
+import dictbase
 
-data = [
-    {
-        "name": 'Instagram',
-        'follower_count': 346,
-        'description': 'A social media plataform',
-        'country': 'Unite States Of America'
-    },
+def choice():
+    first_Choice = dict(random.choice(dictbase.data))
+    return first_Choice
 
-    {
-        "name": 'Kwai',
-        'follower_count': 54,
-        'description': 'A social media plataform',
-        'country': 'South Korea'
-    },
-
-    {
-        "name": 'Tik tok',
-        'follower_count': 566,
-        'description': 'A social media plataform',
-        'country': 'England'
-    }
-
-]
+print(choice())
 
 #print(data[0]["name"])
 
-for i in data[0]:
-    print(data[0][i])
 
-print('\n')
+#Output --> Instagram  346 A social media plataform Unite States Of America
+#
+# for i in data[0]:
+#    print(data[0][i])
 
-for i in data[1]:
-    print(data[1][i])
-
-print('\n')
-
-for i in data[2]:
-    print(data[2][i])
 
