@@ -49,8 +49,6 @@ def check_answer(answer):
 
 
 first_Choice = dict(random.choice(dictbase.data))
-
-
 #Guardar o resultado do maior palpite
 #highestFollowerCount = dict()
 while gameStart != False:
