@@ -16,13 +16,14 @@ def main():
 # Check user answer
 def check_answer(answer):
     global score
+    global gameStart
     if user_question == "A":
         if first_Choice['follower_count'] > second_Choice['follower_count']:
             score += 1
             print(f"\nYou're right!, Current score: {score}")
         else:
             print(f"\nSorry, you're wrong, Final Score: {score}")
-            #Parar o loop
+            #Stop  loop
             gameStart = False
 
     elif user_question == "B":
