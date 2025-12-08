@@ -1,5 +1,5 @@
 import random
-import dictbase
+import game_data
 import draws
 
 print(f"{draws.image_Logo}\n\n")
@@ -43,15 +43,15 @@ def check_answer(answer):
         print("Invalid option!, Please insert a valid number(A or B)")
 
 
-first_Choice = dict(random.choice(dictbase.data))
+first_Choice = dict(random.choice(game_data.data))
 
 
 
 while gameStart:
     if score >= 0:
-        second_Choice = dict(random.choice(dictbase.data))
+        second_Choice = dict(random.choice(game_data.data))
         #Impedir que sejam feita duas escolhas semelhantes
         while first_Choice['name'] == second_Choice['name']:
-            second_Choice = dict(random.choice(dictbase.data))
+            second_Choice = dict(random.choice(game_data.data))
         main()
     
